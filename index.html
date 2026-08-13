@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple, fast, and responsive calculator web app.">
+  <title>Modern Calculator | Fast & Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <h1>Calculator</h1>
+        <p>Simple. Fast. Reliable.</p>
+      </header>
+
+      <div class="display" aria-live="polite">
+        <div id="expression" class="expression">&nbsp;</div>
+        <output id="result" class="result">0</output>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="btn danger" data-action="clear" aria-label="Clear calculator">C</button>
+        <button type="button" class="btn danger" data-action="delete" aria-label="Delete last character">Del</button>
+        <button type="button" class="btn operator" data-value="/">&divide;</button>
+        <button type="button" class="btn operator" data-value="*">&times;</button>
+
+        <button type="button" class="btn" data-value="7">7</button>
+        <button type="button" class="btn" data-value="8">8</button>
+        <button type="button" class="btn" data-value="9">9</button>
+        <button type="button" class="btn operator" data-value="-">&minus;</button>
+
+        <button type="button" class="btn" data-value="4">4</button>
+        <button type="button" class="btn" data-value="5">5</button>
+        <button type="button" class="btn" data-value="6">6</button>
+        <button type="button" class="btn operator" data-value="+">+</button>
+
+        <button type="button" class="btn" data-value="1">1</button>
+        <button type="button" class="btn" data-value="2">2</button>
+        <button type="button" class="btn" data-value="3">3</button>
+        <button type="button" class="btn equals" data-action="calculate">=</button>
+
+        <button type="button" class="btn zero" data-value="0">0</button>
+        <button type="button" class="btn" data-value=".">.</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
